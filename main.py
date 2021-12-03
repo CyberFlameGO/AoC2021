@@ -1,16 +1,19 @@
-# This is a sample Python script.
+# -*- coding: utf-8 -*-
+"""
+Main entrypoint
+STALE
+"""
+global solved_val
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+def invoke_solution(solution):
+    """
+    Invoke the solution.
+    """
+    exec(open(f"./{solution}/runner.py").read())
+    return solved_val
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    invoke_solution("day_one")
