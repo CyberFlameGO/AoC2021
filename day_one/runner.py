@@ -2,7 +2,7 @@
 """
 Solution for the first day's problem
 """
-input_file = list(map(int, open('input.txt').read().splitlines()))
+input_file = list(map(int, open('./input.txt').read().splitlines()))
 
 
 def part_one(data: list):
